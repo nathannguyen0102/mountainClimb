@@ -1,0 +1,318 @@
+/* thing to do */
+/* change color to root */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* header */
+
+header {
+  background-image: url(img/hero.jpg);
+  width: 1600px;
+  height: 825px;
+  margin: 0 auto;
+}
+
+/* class to set margin to 0 auto */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: Lato;
+  font-weight: 900;
+  font-style: italic;
+  color: #fefeff;
+  font-size: 12px;
+}
+
+.hero-img {
+  margin-top: 184px;
+  margin-left: 94px;
+}
+
+/* underline  */
+.header-menu li a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #fefeff;
+  margin-top: 3px;
+  display: block;
+}
+
+/* History */
+.history {
+  background-image: url(img/peak.jpg);
+  width: 1600px;
+  height: 905px;
+  margin: 0 auto;
+}
+
+.history-top {
+  height: 710px;
+}
+
+.history-text {
+  display: flex;
+  align-items: center;
+}
+
+.history-number {
+  font-size: 135px;
+  font-weight: 700;
+  font-family: Oswald;
+  color: #6e7e99;
+
+  /* align-self: flex-start; */
+}
+
+.history-h2 {
+  font-size: 32px;
+  font-family: Oswald;
+  font-weight: 700;
+  color: #414f6b;
+}
+
+.history-h2::after {
+  content: "";
+  width: 18%;
+  height: 20px;
+  background-color: #6e7e99;
+  margin-top: 3px;
+  display: block;
+}
+
+.history-info {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  color: #2e3136;
+  line-height: 24px;
+  margin-left: 75px;
+}
+
+/* carousel */
+.carousel {
+  height: 195px;
+  background-color: #414f6b;
+  opacity: 0.8;
+}
+
+.carousel-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.carousel-dot-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.carousel-dot {
+  background-color: #ffffff;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
+
+/* CLIMB */
+.climb {
+  width: 1600px;
+  height: 182px;
+  margin: 0 auto;
+  /* background-color: #ffffff; */
+}
+
+.climb-text {
+  display: flex;
+  align-items: center;
+}
+
+.climb-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 180px;
+}
+
+.climb-bot {
+  width: 1600px;
+  margin: 0 auto;
+  background-image: url(img/photo-1417021423914-070979c8eb34.jpg);
+  /* background-position-y: 720px; */
+  background-position-y: 660px;
+  height: 590px;
+  /* background-size: 70%; */
+}
+
+.climb-number {
+  font-size: 135px;
+  font-weight: 700;
+  font-family: Oswald;
+  color: #b0b4be;
+  margin-left: 42px;
+}
+
+.climb-h2 {
+  font-size: 32px;
+  font-family: Oswald;
+  font-weight: 700;
+  color: #414f6b;
+}
+
+.climb-h2::after {
+  content: "";
+  width: 24%;
+  height: 20px;
+  background-color: #b0b4be;
+  margin-top: 3px;
+  display: block;
+}
+
+.climb-info {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  color: #2e3136;
+  line-height: 24px;
+  /* margin-left: 75px; */
+}
+
+.climb-bot-mountain {
+  background-color: #414f6b;
+  height: 40px;
+}
+
+.climb-bot-ul {
+  /* padding-top: 6px; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  font-family: Oswald;
+  font-weight: 700;
+  color: #b0b4be;
+  /* padding-bottom: 25px; */
+}
+
+.climb-bot-ul li {
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Set active class to do js later */
+.active {
+  text-decoration: underline;
+  color: #414f6b;
+  background-color: #b0b4be;
+  /* padding: 2px 10px 8px 10px; */
+}
+
+/* Schedule */
+.schedule-div {
+  background-color: white;
+  opacity: 0.8;
+  margin-top: 100px;
+  color: black;
+  /* padding-top: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 25px; */
+  padding: 25px 40px;
+  width: 353px;
+}
+
+.schedule-div h2 {
+  font-size: 32px;
+  font-family: Oswald;
+  font-weight: 700;
+  color: #414f6b;
+}
+
+.schedule-flex {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 52px;
+  font-family: Lato;
+  font-size: 16px;
+  color: #2e3136;
+}
+
+.ul1 {
+  margin-bottom: 15px;
+}
+
+.ul2 {
+  margin-bottom: 38px;
+}
+
+.ul3 {
+  margin-bottom: 38px;
+}
+
+/* Footer */
+footer {
+  height: 75px;
+  background-color: #414f6b;
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #63769d;
+}
+
+.footer-logo {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  color: #63769d;
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.footer-right {
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2.4px;
+  margin-top: 15px;
+}
